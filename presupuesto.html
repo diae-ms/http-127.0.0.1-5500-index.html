@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto - Hamburguesas Deliciosas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container d-flex align-items-center">
+            <img src="imagenes/noun-hamburger-4915080.png" alt="Logo de Hamburguesas" class="mr-3" style="width: 50px;">
+        </div>
+        <h1>Hamburguesas Deliciosas</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/galeria.html">Galería</a></li>
+                <li><a href="/presupuesto.html">Presupuesto</a></li>
+                <li><a href="/contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="presupuesto">
+            <h2>Calcula tu presupuesto</h2>
+            <form id="budget-form">
+                <fieldset>
+                    <legend>Datos de Contacto</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="15" required>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" maxlength="40" required>
+                    <label for="telefono">Teléfono de contacto:</label>
+                    <input type="text" id="telefono" name="telefono" maxlength="9" required>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <label for="producto">Producto:</label>
+                    <select id="producto" name="producto" required>
+                        <option value="" disabled selected>Selecciona un producto</option>
+                        <option value="7">Hamburguesa Clásica (7€)</option>
+                        <option value="6.50">Taco Clásico (6,50€)</option>
+                        <option value="5">Taco Vegano (5€)</option>
+                    </select>
+                    <label for="plazo">Plazo de entrega (días):</label>
+                    <input type="number" id="plazo" name="plazo" min="1" required>
+                    <p></p>
+                    <label>Extras:</label><p></p>
+                    <input type="checkbox" id="patatas" name="extra" value="1.50"> Patatas fritas (1,50€)<br>
+                    <input type="checkbox" id="ketchup" name="extra" value="0.50"> Ketchup (0,50€)<br>
+                    <input type="checkbox" id="salsa_blanca" name="extra" value="0.50"> Salsa blanca (0,50€)<br>
+                    <p>Total: <span id="total">0€</span></p>
+                </fieldset>
+                <fieldset>
+                    <label for="condiciones">Aceptar condiciones de privacidad</label>
+                    <input type="checkbox" id="condiciones" name="condiciones" required>
+                </fieldset>
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-dark text-white p-4 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Síguenos en nuestras redes sociales:</p>
+                    <a href="https://www.facebook.com" target="_blank" class="text-white mr-2">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="text-white mr-2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <p>Dirección:</p>
+                    <p>Carrer Príncep de Viana, 78, 25008 Lleida</p>
+                </div>
+                <div class="col-md-4">
+                    <p><a href="aviso-legal.html" class="text-white">Aviso Legal</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

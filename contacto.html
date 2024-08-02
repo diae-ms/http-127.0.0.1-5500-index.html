@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Hamburguesas Deliciosas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        .contact-info {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .map-container {
+            flex: 1;
+            text-align: right;
+        }
+
+        .map-container img {
+            width: 110%;
+            max-width: 350px; 
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container d-flex align-items-center">
+            <img src="imagenes/noun-hamburger-4915080.png" alt="Logo de Hamburguesas" class="mr-3" style="width: 50px;">
+        </div>
+        <h1>Hamburguesas Deliciosas</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/galeria.html">Galería</a></li>
+                <li><a href="/presupuesto.html">Presupuesto</a></li>
+                <li><a href="/contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><strong>Dirección:</strong> Carrer Príncep de Viana, 78, 25008 Lleida</p>
+                    <p><strong>Teléfono:</strong> 973 973 973</p>
+                    <p><strong>Email:</strong> diaemsiah@hamburguesasdeliciosas.com</p>
+                </div>
+                <div class="map-container">
+                    <h3>Ubicación:</h3>
+                    <img src="imagenes/map.png" alt="Mapa de la ubicación">
+                    <p><a href="https://www.openstreetmap.org/#map=19/41.62421/0.62508">Ver el mapa más grande</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white p-4 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Síguenos en nuestras redes sociales:</p>
+                    <a href="https://www.facebook.com" target="_blank" class="text-white mr-2">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="text-white mr-2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <p>Dirección:</p>
+                    <p>Carrer Príncep de Viana, 78, 25008 Lleida</p>
+                </div>
+                <div class="col-md-4">
+                    <p><a href="aviso-legal.html" class="text-white">Aviso Legal</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
